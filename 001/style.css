@@ -1,0 +1,61 @@
+:root, * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+}
+
+body > div {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+}
+
+.one, .two, .three {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.one {
+    background: lightblue;
+    z-index: 3;
+    left: 0;
+}
+
+.two {
+    background: green;
+    z-index: 2;
+}
+
+.three {
+    background: red;
+    z-index: 1;    
+}
+
+.turn-over-area1, .turn-over-area2, .turn-over-area3 {
+    position: absolute;
+    right: 0;
+    height: 100vh;
+    width: 10vw;
+}
+
+.turn-over-area1 {
+    background: linear-gradient(90deg, rgba(173,216,230,1) 0%, rgba(0,0,0,1) 100%);
+}
+
+.turn-over-area2 {
+    background: linear-gradient(90deg, rgba(0,128,0,1) 0%, rgba(0,0,0,1) 100%);
+}
+
+.turn-over-area3 {
+    background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(0,0,0,1) 100%);
+}
+
+.text-part {
+    width: 60%;
+}
